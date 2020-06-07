@@ -6,7 +6,7 @@
 
 .slider {
   margin: 50px;
-  width: 900px;
+  width: 800px;
   display: inline-block;
 }
 
@@ -32,5 +32,13 @@
 }
 
 .ySelector {
+  display: inline-block;
+}
+
+.slidertitle {
+  display: inline-block;
+}
+
+.slider-action {
   display: inline-block;
 }

@@ -297,7 +297,9 @@ function App() {
             })}
         </div>
         <div className="slider">
+          <h3 className="slidertitle">Baujahr</h3>
           <Range
+            className="slider-action"
             min={70}
             max={82}
             defaultValue={70}
