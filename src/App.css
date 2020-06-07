@@ -1,8 +1,36 @@
 .chart-container {
   width: 1000px;
   height: 100%;
+  display: inline-block;
 }
 
 .slider {
   margin: 50px;
+  width: 900px;
+  display: inline-block;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.manufacturers {
+  height: 200px;
+  overflow-y: scroll;
+  width: 300px;
+  display: inline-block;
+}
+
+.checkbox-elements {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.ySelector {
+  display: inline-block;
 }
