@@ -187,7 +187,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      <div className="x-selector">
         <span>Y-Achse</span>
         <select
           value={selectedYAxis}
@@ -297,6 +297,10 @@ function App() {
             })}
         </div>
         <div className="slider">
+          <div>Die Fläche der Elemente entspricht den PS.</div>
+          <p>American: &#9679;</p>
+          <p>European: &#9632;</p>
+          <p>Japanese: &#9733;</p>
           <h3 className="slidertitle">Baujahr</h3>
           <Range
             className="slider-action"

@@ -5,7 +5,7 @@
 }
 
 .slider {
-  margin: 50px;
+  margin: 0 50px;
   width: 800px;
   display: inline-block;
 }
@@ -31,8 +31,16 @@
   align-content: flex-start;
 }
 
+.x-selector {
+  position: fixed;
+  top: 50px;
+  margin: 10px 10px 0 10px;
+}
+
 .ySelector {
   display: inline-block;
+  position: fixed;
+    top: 580px;
 }
 
 .slidertitle {
