@@ -33,7 +33,7 @@ function App() {
     const filteredData = filterData(data.data);
     const yearData = filteredData.filter(
       (car) =>
-        constructionYear[0] >= parseInt(car.Baujahr, 10) &&
+        parseInt(car.Baujahr, 10) >= constructionYear[0] &&
         parseInt(car.Baujahr, 10) <= constructionYear[1]
     );
     const tempManufacturers = filteredData.map((car) => car.Hersteller);
@@ -54,7 +54,7 @@ function App() {
     if (carsData && carsData.length > 0) {
       const yearData = carsData.filter(
         (car) =>
-          constructionYear[0] >= parseInt(car.Baujahr, 10) &&
+          parseInt(car.Baujahr, 10) >= constructionYear[0] &&
           parseInt(car.Baujahr, 10) <= constructionYear[1]
       );
       setScatterData(getScatterData(yearData));
@@ -82,7 +82,7 @@ function App() {
       );
       const yearData = filteredManufacturers.filter(
         (car) =>
-          constructionYear[0] >= parseInt(car.Baujahr, 10) &&
+          parseInt(car.Baujahr, 10) >= constructionYear[0] &&
           parseInt(car.Baujahr, 10) <= constructionYear[1]
       );
       setScatterData(getScatterData(yearData));

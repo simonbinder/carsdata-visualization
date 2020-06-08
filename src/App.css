@@ -2,6 +2,7 @@
   width: 1000px;
   height: 100%;
   display: inline-block;
+  margin-left: 70px;
 }
 
 .slider {
@@ -35,6 +36,7 @@
   position: fixed;
   top: 50px;
   margin: 10px 10px 0 10px;
+  z-index: 10;
 }
 
 .ySelector {
