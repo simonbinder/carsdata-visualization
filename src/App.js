@@ -37,7 +37,9 @@ function App() {
         parseInt(car.Baujahr, 10) <= constructionYear[1]
     );
     const tempManufacturers = filteredData.map((car) => car.Hersteller);
-    const uniqueManufacturs = Array.from(new Set(tempManufacturers));
+    const uniqueManufacturs = Array.from(new Set(tempManufacturers)).filter(
+      (manufacturer) => manufacturer !== undefined
+    );
     const manufacturerData = yearData.filter((car) =>
       uniqueManufacturs.includes(car.Hersteller)
     );
